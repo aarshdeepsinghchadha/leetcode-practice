@@ -37,3 +37,11 @@ from RankedSalaries
 where dense_rank = 2;
 
 
+-- rank employees based on multiple columns using Rank()
+
+select employee_id, department_id, salary,
+RANK() over (partition by department_id order by salary desc) as rank
+from employees
+
+
+-- duplicate record
