@@ -45,3 +45,14 @@ from employees
 
 
 -- duplicate record
+
+with duplicateData as(
+    select employee_id, department_id,
+    rank() over (PARTITION by department_id order by salary desc) as rank
+    from employees
+)
+select employee_id, department_id
+from duplicateData
+where rank > 1;
+
+
