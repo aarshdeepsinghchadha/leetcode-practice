@@ -46,7 +46,7 @@ from employees
 
 -- duplicate record
 
-with duplicateData as(
+with duplicateData as (
     select employee_id, department_id,
     rank() over (PARTITION by department_id order by salary desc) as rank
     from employees
@@ -54,5 +54,20 @@ with duplicateData as(
 select employee_id, department_id
 from duplicateData
 where rank > 1;
+
+
+-- top N employeees in each department using dense_rank()
+
+with RankedEmployees as (
+    select employee_id, department_id, salary, 
+    Dense_Rank() over (partition by department_id order by salary desc) as rank
+    from employees
+)
+select employee_id, department_id, salary
+from RankedEmployees
+where rank <= 3;
+
+
+
 
 
