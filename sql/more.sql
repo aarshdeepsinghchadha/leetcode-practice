@@ -1,0 +1,1 @@
+select  column_name from table_name order by created_date desc limit 1;
