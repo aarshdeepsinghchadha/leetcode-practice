@@ -1,0 +1,86 @@
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# User-specific files for Visual Studio for Mac
+.vscode/
+.idea/
+.vs/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]Release/
+[Dd]ReleasePublic/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+[Aa]rms64/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer files (installations)
+*.exe
+*.dll
+*.pdb
+
+# Windows Installer files (non-production)
+*.vsscc
+*.vssscc
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Windows Installer files
+*.vsscc
+*.vssscc
+
+# User-specific files
+.vs2019/
+.vs2022/
+
+# .NET Core and ASP.NET files
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# .NET Core builds
+bin/
+obj/
+
+# User-specific files
+*.dbmdl
+
+# VS Code directories
+.vscode/
+
+# JetBrains Rider directories
+.idea/
+
+# Windows Installer files (old)
+*.vspscc
+*.vssscc
+
+# NUnit Test results
+TestResults/
+
+# Azure Pipelines
+.vsts/
+
+# JetBrains Rider directories
+.idea/
+
+# Windows Installer directories
+*.vspscc
+*.vssscc
+
+# Windows Installer files
+*.cab
+*.msi
