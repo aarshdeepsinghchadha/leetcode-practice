@@ -8,5 +8,10 @@ class Program
         var minLengthObj = new MinimumLengthOfStringAfterOperations();
         minLengthObj.ProcessAndPrintMinimumLength();
         #endregion
+
+        #region AddBinary
+        var addBinaryObj = new AddBinaryOperations();
+        addBinaryObj.ProcessAndPrintAddBinary();
+        #endregion
     }
 }
